@@ -27,7 +27,7 @@
             clifford: '#da373d',
             bgPrimary: 'rgb(255, 249, 244)',
             buttonColor: 'rgb(255, 220, 38)',
-            cardBg: 'rgb(249, 223, 138)'
+            cardBg: 'rgb(249, 223, 138)',
           },
           fontFamily: {
             sora: ['Sora', 'serif'],
@@ -38,7 +38,7 @@
     }
   </script>
 </head>
-<body class="p-2">
+<body class="px-2 sm:m-0">
   <!-- navbar-->
   <header class="w-full bg-bgPrimary py-[9px]">
     <div class="container sm:mx-auto">
@@ -85,43 +85,43 @@
   <div class="container sm:mx-auto ">
     <div class="category-content mt-[200px] sm:mt-[300px]"> <!-- banner image is absolute for this using margin top-->
       <h1 class="font-adlam text-2xl sm:text-4xl font-medium mb-[48px]">Browse Category</h1>
-      <div class="cards grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-        <div class="card1 mx-auto rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+      <div class="cards grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+        <div class="card1 mx-auto rounded-xl p-[34px_48px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/dog-cartoon.png" alt="dog-cartoo"></div>
           <div>
             <h3 class="text-center font-adlam">Dog</h3>
             <p class="text-center font-sora">3 items</p>
           </div>
         </div>
-        <div  class="card2 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+        <div  class="card2 mx-auto  rounded-xl p-[30px_40px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/fish-cartoon.png" alt="fish-cartoon"></div>
           <div>
             <h3 class="text-center font-adlam">Fish</h3>
             <p class="text-center font-sora">3 items</p>
           </div>
         </div>
-        <div  class="card3 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+        <div  class="card3 mx-auto  rounded-xl p-[34px_48px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/mouse-cartoon.png" alt="mouse-cartoon"></div>
           <div>
             <h3 class="text-center font-adlam">Mouse</h3>
             <p class="text-center font-sora">3 items</p>
           </div>
         </div>
-        <div  class="card4 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+        <div  class="card4 mx-auto  rounded-xl p-[34px_48px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/rabbit-cartoon.png" alt="rabbit-cartoon"></div>
           <div>
             <h3 class="text-center font-adlam">Rabbit</h3>
             <p class="text-center font-sora">3 items</p>
           </div>
         </div>
-        <div  class="card5 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+        <div  class="card5 mx-auto  rounded-xl p-[34px_48px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/bird-cartoon.png" alt="bird-cartoon"></div>
           <div>
             <h3 class="text-center font-adlam">Bird</h3>
             <p class="text-center font-sora">3 items</p>
           </div>
         </div>
-        <div  class="card6  mx-auto rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+        <div  class="card6  mx-auto rounded-xl p-[34px_48px] box-border w-[150px]  sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
           <div class="bg-white p-4 rounded-full mb-2"><img src="assets/cat-cartoon.png" alt="cat-cartoon"></div>
           <div>
             <h3 class="text-center font-adlam">Cat</h3>
@@ -131,6 +131,151 @@
       </div>
     </div>
   </div>
+
+  <!-- Trending Pet Products -->
+<section class="products  mt-32 bg-bgPrimary ">
+  <div class="products-container container sm:max-auto p-12 sm:p-20 md:p-28">
+    <h1 class="font-adlam text-2xl sm:text-4xl font-medium mb-[48px]">Trending Pet Products</h1>
+
+    <!-- Product Cards -->
+    <div class="product-cards relative h-[400px] grid  lg:grid-cols-5 lg:grid-rows-3 gap-4">
+      <div class="card1 col-span-2 row-span-3 p-5 bg-cardBg flex">
+        <div class="card1-content">
+          <h3 class="font-adlam text-3xl font-medium mb-3">T-Shirt For Dog</h3>
+          <p class="font-sora">Buy medicine, essential products for your pet.</p>
+          <button class="font-sora font-semibold bg-white py-2 px-5 rounded-lg mt-2 cursor-pointer">Shop Now</button>
+        </div>
+        <img class="w-[200px] h-[300px] relative top-0" src="assets/cute-pet-small.png" alt="T-Shirt For Dog">
+      </div>
+      
+      <div class="card2 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+      
+      <div class="card3 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+      
+      <div class="card4 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+      
+      <div class="card5 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+      
+      <div class="card6 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+      
+      <div class="card7 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+
+      <div class="card8 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+
+      <div class="card9 col-span-1 bg-white flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+
+      <div class="card10 hidden lg:block col-span-1 bg-white lg:flex p-5 md:p-8 justify-between">
+        <div class="card-image">
+          <img class="bg-bgPrimary p-3 rounded-full" src="assets/bird-cartoon.png" alt="bird-cartoon">
+        </div>
+        <div class="card-content">
+          <div class="flex items-center">
+            <img class="w-5 mb-2" src="assets/star.png" alt="star rating">
+            <p class="font-sora font-semibold text-base ml-3 mb-2">4.5</p>
+          </div>
+          <h3 class="font-sora font-semibold text-xl mb-2">Bird</h3>
+          <p class="font-sora text-base font-medium mb-2">$32.90</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 
