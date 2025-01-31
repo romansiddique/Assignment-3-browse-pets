@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
   <title>Browse Pets</title>
+
+  <!-- daisyui with tailwind-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/cffc2fbc9a.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind customize config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bgPrimary: 'rgb(255, 249, 244)',
+            buttonColor: 'rgb(255, 220, 38)'
+          },
+          fontFamily: {
+            sora: ['Sora', 'serif'],
+            adlam: ['ADLaM Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  
+<body class="p-2">
+  <!-- navbar-->
+  <header class="w-full bg-bgPrimary py-[9px]">
+    <div class="container sm:mx-auto">
+      <nav class="flex justify-between items-center font-sora">
+        <div class="nav-logo flex items-center">
+          <img src="assets/logo-header.png" alt="navbar logo browse pets">
+          <h3 class="ml-3 font-bold">Browse Pets</h3>
+        </div>
+        <div class="md:nav-menue md:flex md:items-center font-medium hidden">
+          <div class="md:hidden lg:block">
+            <ul class="flex space-x-8 mr-32">
+              <a href=""><li class="hover:underline">Find a pets</li></a>
+              <a href=""><li class="hover:underline">Breeds</li></a>
+              <a href=""><li class="hover:underline">Contact Us</li></a>
+            </ul>
+          </div>
+          <div class="space-x-5">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="border border-buttonColor p-[10px_30px] rounded-lg transition-all duration-1000 hover:bg-buttonColor">
+              Log In
+            </button>            
+            <button class="p-[10px_30px] rounded-lg bg-buttonColor hover:underline">Register</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars lg:hidden text-2xl"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- banner Section -->
+  <section class="container sm:mx-auto"">
+    <div class="banner-content md:w-[640px]">
+      <h1 class="font-adlam text-[30px] sm:text-[56px] leading-tight mb-5">Pamper Your Pet, Because They Deserve The Best</h1>
+      <p class="font-sora text-base sm:text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+      <button>Find a pet</button>
+    </div>
+    <div class="banner-image ">
+      <img class="border" src="assets/cat-big.png" alt="cat image">
+    </div>
+  </section>
 </body>
+
 </html>
