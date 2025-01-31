@@ -26,7 +26,8 @@
           colors: {
             clifford: '#da373d',
             bgPrimary: 'rgb(255, 249, 244)',
-            buttonColor: 'rgb(255, 220, 38)'
+            buttonColor: 'rgb(255, 220, 38)',
+            cardBg: 'rgb(249, 223, 138)'
           },
           fontFamily: {
             sora: ['Sora', 'serif'],
@@ -73,12 +74,64 @@
     <div class="banner-content md:w-[640px]">
       <h1 class="font-adlam text-[30px] sm:text-[56px] leading-tight mb-5">Pamper Your Pet, Because They Deserve The Best</h1>
       <p class="font-sora text-base sm:text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-      <button class="p-[10px_30px] rounded-lg bg-buttonColor hover:underline mt-2 font-sora font-medium">Find a pet</button>
+      <button class="p-[10px_30px] rounded-lg bg-buttonColor hover:underline mt-10 font-sora font-medium">Find a pet</button>
     </div>
-    <div class="banner-image lg:absolute lg:left-[100px] lg:top-[20px]">
+    <div class="banner-image absolute top-[220px] lg:left-[100px] lg:top-[20px]">
       <img class="lg:w-[1000px]" src="assets/cat-big.png" alt="cat image">
     </div>
   </section>
+
+  <!-- category -->
+  <div class="container sm:mx-auto ">
+    <div class="category-content mt-[200px] sm:mt-[300px]"> <!-- banner image is absolute for this using margin top-->
+      <h1 class="font-adlam text-2xl sm:text-4xl font-medium mb-[48px]">Browse Category</h1>
+      <div class="cards grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+        <div class="card1 mx-auto rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/dog-cartoon.png" alt="dog-cartoo"></div>
+          <div>
+            <h3 class="text-center font-adlam">Dog</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+        <div  class="card2 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/fish-cartoon.png" alt="fish-cartoon"></div>
+          <div>
+            <h3 class="text-center font-adlam">Fish</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+        <div  class="card3 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/mouse-cartoon.png" alt="mouse-cartoon"></div>
+          <div>
+            <h3 class="text-center font-adlam">Mouse</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+        <div  class="card4 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/rabbit-cartoon.png" alt="rabbit-cartoon"></div>
+          <div>
+            <h3 class="text-center font-adlam">Rabbit</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+        <div  class="card5 mx-auto  rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/bird-cartoon.png" alt="bird-cartoon"></div>
+          <div>
+            <h3 class="text-center font-adlam">Bird</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+        <div  class="card6  mx-auto rounded-xl p-[34px_48px] box-border w-[250px] sm:w-[170px] bg-cardBg flex flex-col justify-center items-center">
+          <div class="bg-white p-4 rounded-full mb-2"><img src="assets/cat-cartoon.png" alt="cat-cartoon"></div>
+          <div>
+            <h3 class="text-center font-adlam">Cat</h3>
+            <p class="text-center font-sora">3 items</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
