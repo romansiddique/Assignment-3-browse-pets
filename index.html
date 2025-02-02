@@ -38,6 +38,28 @@
       }
     }
   </script>
+
+  <style>
+    .title {
+            text-transform: uppercase;
+            animation: glow 2s infinite alternate;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes glow {
+          0% {
+            text-shadow: 0 0 10px rgb(63, 226, 4); 
+            color: rgba(227, 42, 9, 0.857);
+          }
+          50%{
+            text-shadow: 0 0 10px rgb(4, 210, 237);
+            color: rgba(9, 11, 6, 0.857);
+          }
+          100% {
+          text-shadow: 0 0 20px rgba(210, 220, 17, 0.982); 
+          color: rgba(209, 20, 20, 0.982);
+          }
+        }
+  </style>
 </head>
 <body class="px-2 sm:m-0">
   <!-- navbar-->
@@ -74,7 +96,7 @@
   <!-- banner Section -->
   <section class="container sm:mx-auto mt-20 relative">
     <div class="banner-content md:w-[640px]">
-      <h1 class="font-adlam text-[30px] sm:text-[56px] leading-tight mb-5">Pamper Your Pet,Because <br> They Deserve The Best</h1>
+      <h1 class="title font-adlam text-[30px] sm:text-[56px] leading-tight mb-5">Pamper Your Pet,Because <br> They Deserve The Best</h1>
       <p class="font-sora text-base sm:text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
       <button class="p-[10px_30px] rounded-lg bg-buttonColor hover:underline mt-10 font-sora font-medium">Find a pet</button>
     </div>
